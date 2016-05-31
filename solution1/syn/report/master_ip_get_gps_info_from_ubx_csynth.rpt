@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vivado HLS Report for 'master_ip_get_gps_info_from_ubx'
+================================================================
+* Date:           Wed May 11 13:21:24 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        master_ip
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  20.00|      6.97|        2.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    2|    1|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    639|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    218|
+|Register         |        -|      -|     214|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     214|    857|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |grp_fu_334_p2        |     +    |      0|  0|   6|           1|           6|
+    |tmp_21_fu_766_p2     |     +    |      0|  0|   6|           6|           1|
+    |tmp_26_fu_743_p2     |     +    |      0|  0|   9|           9|           9|
+    |tmp_34_fu_700_p2     |     +    |      0|  0|   9|           9|           9|
+    |tmp_42_fu_657_p2     |     +    |      0|  0|   9|           9|           9|
+    |mrv_sel1_fu_779_p3   |  Select  |      0|  0|  32|           1|          32|
+    |mrv_sel2_fu_786_p3   |  Select  |      0|  0|  32|           1|          32|
+    |mrv_sel_fu_772_p3    |  Select  |      0|  0|  32|           1|          32|
+    |ap_sig_bdd_115       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_118       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_121       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_643       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_646       |    and   |      0|  0|   1|           1|           1|
+    |or_cond10_fu_577_p2  |    and   |      0|  0|   1|           1|           1|
+    |or_cond11_fu_595_p2  |    and   |      0|  0|   1|           1|           1|
+    |or_cond12_fu_613_p2  |    and   |      0|  0|   1|           1|           1|
+    |or_cond13_fu_631_p2  |    and   |      0|  0|   1|           1|           1|
+    |or_cond1_fu_377_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond2_fu_395_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond3_fu_413_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond4_fu_431_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond5_fu_449_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond6_fu_477_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond7_fu_495_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond8_fu_513_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond9_fu_553_p2   |    and   |      0|  0|   1|           1|           1|
+    |or_cond_fu_359_p2    |    and   |      0|  0|   1|           1|           1|
+    |tmp1_fu_547_p2       |    and   |      0|  0|   1|           1|           1|
+    |icmp1_fu_535_p2      |   icmp   |      0|  0|   3|           7|           1|
+    |icmp_fu_471_p2       |   icmp   |      0|  0|   1|           2|           1|
+    |tmp_10_fu_443_p2     |   icmp   |      0|  0|   3|           8|           1|
+    |tmp_11_fu_455_p2     |   icmp   |      0|  0|   3|           6|           3|
+    |tmp_13_fu_483_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_14_fu_489_p2     |   icmp   |      0|  0|   3|           6|           4|
+    |tmp_15_fu_501_p2     |   icmp   |      0|  0|   3|           6|           4|
+    |tmp_16_fu_507_p2     |   icmp   |      0|  0|   3|           8|           8|
+    |tmp_17_fu_519_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_18_fu_541_p2     |   icmp   |      0|  0|   3|           8|           3|
+    |tmp_19_fu_559_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_1_fu_365_p2      |   icmp   |      0|  0|   3|           6|           1|
+    |tmp_22_fu_565_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_23_fu_571_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_2_fu_371_p2      |   icmp   |      0|  0|   3|           8|           7|
+    |tmp_30_fu_583_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_31_fu_589_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_38_fu_601_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_39_fu_607_p2     |   icmp   |      0|  0|   3|           6|           5|
+    |tmp_3_fu_383_p2      |   icmp   |      0|  0|   3|           6|           2|
+    |tmp_46_fu_619_p2     |   icmp   |      0|  0|   3|           6|           4|
+    |tmp_47_fu_625_p2     |   icmp   |      0|  0|   3|           8|           8|
+    |tmp_4_fu_389_p2      |   icmp   |      0|  0|   3|           8|           1|
+    |tmp_5_fu_401_p2      |   icmp   |      0|  0|   3|           6|           2|
+    |tmp_6_fu_407_p2      |   icmp   |      0|  0|   3|           8|           3|
+    |tmp_7_fu_419_p2      |   icmp   |      0|  0|   3|           6|           3|
+    |tmp_8_fu_425_p2      |   icmp   |      0|  0|   3|           8|           6|
+    |tmp_9_fu_437_p2      |   icmp   |      0|  0|   3|           6|           3|
+    |tmp_fu_347_p2        |   icmp   |      0|  0|   3|           6|           1|
+    |tmp_s_fu_353_p2      |   icmp   |      0|  0|   3|           8|           8|
+    |tmp_28_fu_759_p2     |    or    |      0|  0|  44|          32|          32|
+    |tmp_36_fu_716_p2     |    or    |      0|  0|  44|          32|          32|
+    |tmp_44_fu_673_p2     |    or    |      0|  0|  44|          32|          32|
+    |tmp_27_fu_753_p2     |    shl   |      0|  0|  88|          32|          32|
+    |tmp_35_fu_710_p2     |    shl   |      0|  0|  88|          32|          32|
+    |tmp_43_fu_667_p2     |    shl   |      0|  0|  88|          32|          32|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0| 639|         444|         461|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |                   Name                  | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                |   1|          4|    1|          4|
+    |ap_return_0                              |   6|          2|    6|         12|
+    |ap_return_1                              |  32|          2|   32|         64|
+    |ap_return_2                              |  32|          2|   32|         64|
+    |ap_return_3                              |  32|          2|   32|         64|
+    |tmp_20_reg_194                           |  12|          9|    6|         54|
+    |uart_to_coordinates_gnss_state_reg_317   |   6|          3|    6|         18|
+    |uart_to_coordinates_tempCoordinates_0_o  |  32|          3|   32|         96|
+    |uart_to_coordinates_tempCoordinates_1_o  |  32|          3|   32|         96|
+    |uart_to_coordinates_tempCoordinates_2_o  |  32|          3|   32|         96|
+    |write_flag3_1_reg_237                    |   1|          2|    1|          2|
+    +-----------------------------------------+----+-----------+-----+-----------+
+    |Total                                    | 218|         35|  212|        570|
+    +-----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                               |   3|   0|    3|          0|
+    |ap_return_0_preg                        |   6|   0|    6|          0|
+    |ap_return_1_preg                        |  32|   0|   32|          0|
+    |ap_return_2_preg                        |  32|   0|   32|          0|
+    |ap_return_3_preg                        |  32|   0|   32|          0|
+    |coordinates_0_1_reg_257                 |  32|   0|   32|          0|
+    |coordinates_1_1_reg_277                 |  32|   0|   32|          0|
+    |coordinates_2_1_reg_297                 |  32|   0|   32|          0|
+    |tmp_20_reg_194                          |   6|   0|    6|          0|
+    |uart_to_coordinates_gnss_state_reg_317  |   6|   0|    6|          0|
+    |write_flag3_1_reg_237                   |   1|   0|    1|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   | 214|   0|  214|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+|                    RTL Ports                   | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+|ap_clk                                          |  in |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_rst                                          |  in |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_start                                        |  in |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_done                                         | out |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_idle                                         | out |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_ready                                        | out |    1| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_return_0                                     | out |    6| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_return_1                                     | out |   32| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_return_2                                     | out |   32| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|ap_return_3                                     | out |   32| ap_ctrl_hs |       master_ip_get_gps_info_from_ubx       | return value |
+|uart_to_coordinates_current_out_byte_V_read     |  in |    8|   ap_none  | uart_to_coordinates_current_out_byte_V_read |    scalar    |
+|uart_to_coordinates_gnss_state_V_read           |  in |    6|   ap_none  |    uart_to_coordinates_gnss_state_V_read    |    scalar    |
+|uart_to_coordinates_ck_a_V_read                 |  in |    8|   ap_none  |       uart_to_coordinates_ck_a_V_read       |    scalar    |
+|uart_to_coordinates_ck_b_V_read                 |  in |    8|   ap_none  |       uart_to_coordinates_ck_b_V_read       |    scalar    |
+|uart_to_coordinates_tempCoordinates_0_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_0_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_0_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|p_read1                                         |  in |   32|   ap_none  |                   p_read1                   |    scalar    |
+|p_read4                                         |  in |   32|   ap_none  |                   p_read4                   |    scalar    |
+|p_read5                                         |  in |   32|   ap_none  |                   p_read5                   |    scalar    |
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+

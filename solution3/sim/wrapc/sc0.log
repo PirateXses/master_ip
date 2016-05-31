@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_master_ip.cpp
+   Compiling master_ip.cpp_pre.cpp.tb.cpp
+   Compiling master_ip_test.cpp_pre.cpp.tb.cpp
+   Compiling uart_to_coordinates.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

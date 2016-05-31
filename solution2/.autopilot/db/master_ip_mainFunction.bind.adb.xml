@@ -1,0 +1,1264 @@
+<stg><name>master_ip_mainFunction</name>
+
+
+<trans_list>
+
+<trans id="63" from="1" to="2">
+<condition id="18">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="16" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:0  %p_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %p_read5)
+
+]]></node>
+<StgValue><ssdm name="p_read_1"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="17" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:1  %p_read_2 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %p_read2)
+
+]]></node>
+<StgValue><ssdm name="p_read_2"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="18" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:2  %p_read_3 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %p_read)
+
+]]></node>
+<StgValue><ssdm name="p_read_3"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="19" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:3  %input_V_read_1 = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %input_V_read)
+
+]]></node>
+<StgValue><ssdm name="input_V_read_1"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="20" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+:4  %uart_to_coordinates_ck_b_V_rea_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %uart_to_coordinates_ck_b_V_read)
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_b_V_rea_1"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="21" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+:5  %uart_to_coordinates_ck_a_V_rea_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %uart_to_coordinates_ck_a_V_read)
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_a_V_rea_1"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="22" bw="6" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+:6  %uart_to_coordinates_gnss_state_1 = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %uart_to_coordinates_gnss_state_V_read)
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_gnss_state_1"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="23" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+:7  %uart_to_coordinates_current_ou_3 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %uart_to_coordinates_current_out_byte_V_read)
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_current_ou_3"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="24" bw="9" op_0_bw="9" op_1_bw="16" op_2_bw="1" op_3_bw="1" op_4_bw="4" op_5_bw="8" op_6_bw="8">
+<![CDATA[
+:8  %call_ret6 = call fastcc { i1, i8 } @master_ip_uart_to_byte(i16* %uart_to_coordinates_count_V, i1* %uart_to_coordinates_previous_input_V, i1 %input_V_read_1, i4* %uart_to_coordinates_uart_state_V, i8* %uart_to_coordinates_next_out_byte_V, i8 %uart_to_coordinates_current_ou_3)
+
+]]></node>
+<StgValue><ssdm name="call_ret6"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="25" bw="1" op_0_bw="9">
+<![CDATA[
+:9  %tmp = extractvalue { i1, i8 } %call_ret6, 0
+
+]]></node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="26" bw="8" op_0_bw="9">
+<![CDATA[
+:10  %uart_to_coordinates_current_ou = extractvalue { i1, i8 } %call_ret6, 1
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_current_ou"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="27" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+:11  br i1 %tmp, label %_ifconv, label %._crit_edge
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="29" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+_ifconv:0  %tmp_i = add i8 %uart_to_coordinates_current_ou, %uart_to_coordinates_ck_a_V_rea_1
+
+]]></node>
+<StgValue><ssdm name="tmp_i"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>AddSub</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="30" bw="8" op_0_bw="8" op_1_bw="8">
+<![CDATA[
+_ifconv:1  %tmp_85_i = add i8 %tmp_i, %uart_to_coordinates_ck_b_V_rea_1
+
+]]></node>
+<StgValue><ssdm name="tmp_85_i"/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="31" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:2  %tmp_86_i = icmp ugt i6 %uart_to_coordinates_gnss_state_1, -7
+
+]]></node>
+<StgValue><ssdm name="tmp_86_i"/></StgValue>
+</operation>
+
+<operation id="18" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="32" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:3  %tmp_87_i = icmp ult i6 %uart_to_coordinates_gnss_state_1, -4
+
+]]></node>
+<StgValue><ssdm name="tmp_87_i"/></StgValue>
+</operation>
+
+<operation id="19" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="33" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:4  %or_cond4_i = and i1 %tmp_86_i, %tmp_87_i
+
+]]></node>
+<StgValue><ssdm name="or_cond4_i"/></StgValue>
+</operation>
+
+<operation id="20" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="34" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:5  %uart_to_coordinates_ck_a_V_rea = select i1 %or_cond4_i, i8 %uart_to_coordinates_ck_a_V_rea_1, i8 0
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_a_V_rea"/></StgValue>
+</operation>
+
+<operation id="21" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="35" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:6  %uart_to_coordinates_ck_b_V_rea = select i1 %or_cond4_i, i8 %uart_to_coordinates_ck_b_V_rea_1, i8 0
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_b_V_rea"/></StgValue>
+</operation>
+
+<operation id="22" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="36" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:7  %sel_tmp = icmp eq i6 %uart_to_coordinates_gnss_state_1, -1
+
+]]></node>
+<StgValue><ssdm name="sel_tmp"/></StgValue>
+</operation>
+
+<operation id="23" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="37" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:8  %sel_tmp1 = icmp eq i6 %uart_to_coordinates_gnss_state_1, -2
+
+]]></node>
+<StgValue><ssdm name="sel_tmp1"/></StgValue>
+</operation>
+
+<operation id="24" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="38" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:9  %sel_tmp2 = icmp eq i6 %uart_to_coordinates_gnss_state_1, -3
+
+]]></node>
+<StgValue><ssdm name="sel_tmp2"/></StgValue>
+</operation>
+
+<operation id="25" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="39" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:10  %sel_tmp3 = icmp eq i6 %uart_to_coordinates_gnss_state_1, -4
+
+]]></node>
+<StgValue><ssdm name="sel_tmp3"/></StgValue>
+</operation>
+
+<operation id="26" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="40" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:11  %sel_tmp4 = icmp eq i6 %uart_to_coordinates_gnss_state_1, -5
+
+]]></node>
+<StgValue><ssdm name="sel_tmp4"/></StgValue>
+</operation>
+
+<operation id="27" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="41" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:12  %sel_tmp5 = icmp eq i6 %uart_to_coordinates_gnss_state_1, -6
+
+]]></node>
+<StgValue><ssdm name="sel_tmp5"/></StgValue>
+</operation>
+
+<operation id="28" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="42" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:13  %sel_tmp6 = icmp eq i6 %uart_to_coordinates_gnss_state_1, 1
+
+]]></node>
+<StgValue><ssdm name="sel_tmp6"/></StgValue>
+</operation>
+
+<operation id="29" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="43" bw="1" op_0_bw="6" op_1_bw="6">
+<![CDATA[
+_ifconv:14  %sel_tmp7 = icmp eq i6 %uart_to_coordinates_gnss_state_1, 0
+
+]]></node>
+<StgValue><ssdm name="sel_tmp7"/></StgValue>
+</operation>
+
+<operation id="30" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="44" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:15  %tmp6 = or i1 %sel_tmp5, %sel_tmp6
+
+]]></node>
+<StgValue><ssdm name="tmp6"/></StgValue>
+</operation>
+
+<operation id="31" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="45" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:16  %tmp7 = or i1 %sel_tmp4, %sel_tmp3
+
+]]></node>
+<StgValue><ssdm name="tmp7"/></StgValue>
+</operation>
+
+<operation id="32" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="46" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:17  %tmp8 = or i1 %tmp7, %tmp6
+
+]]></node>
+<StgValue><ssdm name="tmp8"/></StgValue>
+</operation>
+
+<operation id="33" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="47" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:18  %tmp9 = or i1 %sel_tmp, %sel_tmp2
+
+]]></node>
+<StgValue><ssdm name="tmp9"/></StgValue>
+</operation>
+
+<operation id="34" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="48" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:19  %tmp10 = or i1 %sel_tmp1, %sel_tmp7
+
+]]></node>
+<StgValue><ssdm name="tmp10"/></StgValue>
+</operation>
+
+<operation id="35" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="49" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:20  %tmp11 = or i1 %tmp10, %tmp9
+
+]]></node>
+<StgValue><ssdm name="tmp11"/></StgValue>
+</operation>
+
+<operation id="36" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="50" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+_ifconv:21  %sel_tmp8 = or i1 %tmp11, %tmp8
+
+]]></node>
+<StgValue><ssdm name="sel_tmp8"/></StgValue>
+</operation>
+
+<operation id="37" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="51" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:22  %uart_to_coordinates_ck_a_V_1_i = select i1 %sel_tmp8, i8 %uart_to_coordinates_ck_a_V_rea, i8 %tmp_i
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_a_V_1_i"/></StgValue>
+</operation>
+
+<operation id="38" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="52" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+_ifconv:23  %uart_to_coordinates_ck_b_V_1_i = select i1 %sel_tmp8, i8 %uart_to_coordinates_ck_b_V_rea, i8 %tmp_85_i
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_b_V_1_i"/></StgValue>
+</operation>
+
+<operation id="39" st_id="1" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="53" bw="102" op_0_bw="102" op_1_bw="8" op_2_bw="6" op_3_bw="8" op_4_bw="8" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32">
+<![CDATA[
+_ifconv:24  %call_ret5 = call fastcc { i6, i32, i32, i32 } @master_ip_get_gps_info_from_ubx(i8 %uart_to_coordinates_current_ou, i6 %uart_to_coordinates_gnss_state_1, i8 %uart_to_coordinates_ck_a_V_1_i, i8 %uart_to_coordinates_ck_b_V_1_i, i32* %uart_to_coordinates_tempCoordinates_0, i32* %uart_to_coordinates_tempCoordinates_1, i32* %uart_to_coordinates_tempCoordinates_2, i32 %p_read_3, i32 %p_read_2, i32 %p_read_1)
+
+]]></node>
+<StgValue><ssdm name="call_ret5"/></StgValue>
+</operation>
+
+<operation id="40" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="54" bw="6" op_0_bw="102">
+<![CDATA[
+_ifconv:25  %call_ret2 = extractvalue { i6, i32, i32, i32 } %call_ret5, 0
+
+]]></node>
+<StgValue><ssdm name="call_ret2"/></StgValue>
+</operation>
+
+<operation id="41" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="55" bw="32" op_0_bw="102">
+<![CDATA[
+_ifconv:26  %coordinates_0_ret = extractvalue { i6, i32, i32, i32 } %call_ret5, 1
+
+]]></node>
+<StgValue><ssdm name="coordinates_0_ret"/></StgValue>
+</operation>
+
+<operation id="42" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="56" bw="32" op_0_bw="102">
+<![CDATA[
+_ifconv:27  %coordinates_1_ret = extractvalue { i6, i32, i32, i32 } %call_ret5, 2
+
+]]></node>
+<StgValue><ssdm name="coordinates_1_ret"/></StgValue>
+</operation>
+
+<operation id="43" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="57" bw="32" op_0_bw="102">
+<![CDATA[
+_ifconv:28  %coordinates_2_ret = extractvalue { i6, i32, i32, i32 } %call_ret5, 3
+
+]]></node>
+<StgValue><ssdm name="coordinates_2_ret"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="44" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="58" bw="0" op_0_bw="0">
+<![CDATA[
+_ifconv:29  br label %._crit_edge
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="45" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="60" bw="32" op_0_bw="32" op_1_bw="0">
+<![CDATA[
+._crit_edge:0  %coordinates = phi i32 [ %p_read_3, %0 ], [ %coordinates_0_ret, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="coordinates"/></StgValue>
+</operation>
+
+<operation id="46" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="61" bw="32" op_0_bw="32" op_1_bw="0">
+<![CDATA[
+._crit_edge:1  %coordinates_1 = phi i32 [ %p_read_2, %0 ], [ %coordinates_1_ret, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="coordinates_1"/></StgValue>
+</operation>
+
+<operation id="47" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="62" bw="32" op_0_bw="32" op_1_bw="0">
+<![CDATA[
+._crit_edge:2  %coordinates_2 = phi i32 [ %p_read_1, %0 ], [ %coordinates_2_ret, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="coordinates_2"/></StgValue>
+</operation>
+
+<operation id="48" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="63" bw="8" op_0_bw="8" op_1_bw="0">
+<![CDATA[
+._crit_edge:3  %uart_to_coordinates_ck_a_V = phi i8 [ %uart_to_coordinates_ck_a_V_rea_1, %0 ], [ %uart_to_coordinates_ck_a_V_1_i, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_a_V"/></StgValue>
+</operation>
+
+<operation id="49" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="64" bw="8" op_0_bw="8" op_1_bw="0">
+<![CDATA[
+._crit_edge:4  %uart_to_coordinates_ck_b_V = phi i8 [ %uart_to_coordinates_ck_b_V_rea_1, %0 ], [ %uart_to_coordinates_ck_b_V_1_i, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_ck_b_V"/></StgValue>
+</operation>
+
+<operation id="50" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="65" bw="6" op_0_bw="6" op_1_bw="0">
+<![CDATA[
+._crit_edge:5  %uart_to_coordinates_gnss_state = phi i6 [ %uart_to_coordinates_gnss_state_1, %0 ], [ %call_ret2, %_ifconv ]
+
+]]></node>
+<StgValue><ssdm name="uart_to_coordinates_gnss_state"/></StgValue>
+</operation>
+
+<operation id="51" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="66" bw="126" op_0_bw="126" op_1_bw="8">
+<![CDATA[
+._crit_edge:6  %newret = insertvalue { i8, i8, i8, i6, i32, i32, i32 } undef, i8 %uart_to_coordinates_ck_a_V, 0
+
+]]></node>
+<StgValue><ssdm name="newret"/></StgValue>
+</operation>
+
+<operation id="52" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="67" bw="126" op_0_bw="126" op_1_bw="8">
+<![CDATA[
+._crit_edge:7  %newret2 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret, i8 %uart_to_coordinates_ck_b_V, 1
+
+]]></node>
+<StgValue><ssdm name="newret2"/></StgValue>
+</operation>
+
+<operation id="53" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="68" bw="126" op_0_bw="126" op_1_bw="8">
+<![CDATA[
+._crit_edge:8  %newret4 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret2, i8 %uart_to_coordinates_current_ou, 2
+
+]]></node>
+<StgValue><ssdm name="newret4"/></StgValue>
+</operation>
+
+<operation id="54" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="69" bw="126" op_0_bw="126" op_1_bw="6">
+<![CDATA[
+._crit_edge:9  %newret6 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret4, i6 %uart_to_coordinates_gnss_state, 3
+
+]]></node>
+<StgValue><ssdm name="newret6"/></StgValue>
+</operation>
+
+<operation id="55" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="70" bw="126" op_0_bw="126" op_1_bw="32">
+<![CDATA[
+._crit_edge:10  %newret8 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret6, i32 %coordinates, 4
+
+]]></node>
+<StgValue><ssdm name="newret8"/></StgValue>
+</operation>
+
+<operation id="56" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="71" bw="126" op_0_bw="126" op_1_bw="32">
+<![CDATA[
+._crit_edge:11  %newret1 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret8, i32 %coordinates_1, 5
+
+]]></node>
+<StgValue><ssdm name="newret1"/></StgValue>
+</operation>
+
+<operation id="57" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="72" bw="126" op_0_bw="126" op_1_bw="32">
+<![CDATA[
+._crit_edge:12  %newret3 = insertvalue { i8, i8, i8, i6, i32, i32, i32 } %newret1, i32 %coordinates_2, 6
+
+]]></node>
+<StgValue><ssdm name="newret3"/></StgValue>
+</operation>
+
+<operation id="58" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="73" bw="0" op_0_bw="126">
+<![CDATA[
+._crit_edge:13  ret { i8, i8, i8, i6, i32, i32, i32 } %newret3
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="64" name="uart_to_coordinates_count_V" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_count_V"/></StgValue>
+</port>
+<port id="65" name="uart_to_coordinates_previous_input_V" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_previous_input_V"/></StgValue>
+</port>
+<port id="66" name="uart_to_coordinates_uart_state_V" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_uart_state_V"/></StgValue>
+</port>
+<port id="67" name="uart_to_coordinates_next_out_byte_V" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_next_out_byte_V"/></StgValue>
+</port>
+<port id="68" name="uart_to_coordinates_current_out_byte_V_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_current_out_byte_V_read"/></StgValue>
+</port>
+<port id="69" name="uart_to_coordinates_gnss_state_V_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_gnss_state_V_read"/></StgValue>
+</port>
+<port id="70" name="uart_to_coordinates_ck_a_V_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_ck_a_V_read"/></StgValue>
+</port>
+<port id="71" name="uart_to_coordinates_ck_b_V_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_ck_b_V_read"/></StgValue>
+</port>
+<port id="72" name="uart_to_coordinates_tempCoordinates_0" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_tempCoordinates_0"/></StgValue>
+</port>
+<port id="73" name="uart_to_coordinates_tempCoordinates_1" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_tempCoordinates_1"/></StgValue>
+</port>
+<port id="74" name="uart_to_coordinates_tempCoordinates_2" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="uart_to_coordinates_tempCoordinates_2"/></StgValue>
+</port>
+<port id="75" name="input_V_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="input_V_read"/></StgValue>
+</port>
+<port id="76" name="p_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read"/></StgValue>
+</port>
+<port id="77" name="p_read2" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read2"/></StgValue>
+</port>
+<port id="78" name="p_read5" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_read5"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="80" from="_ssdm_op_Read.ap_auto.i32" to="p_read_1" fromId="79" toId="3">
+</dataflow>
+<dataflow id="81" from="p_read5" to="p_read_1" fromId="78" toId="3">
+</dataflow>
+<dataflow id="82" from="_ssdm_op_Read.ap_auto.i32" to="p_read_2" fromId="79" toId="4">
+</dataflow>
+<dataflow id="83" from="p_read2" to="p_read_2" fromId="77" toId="4">
+</dataflow>
+<dataflow id="84" from="_ssdm_op_Read.ap_auto.i32" to="p_read_3" fromId="79" toId="5">
+</dataflow>
+<dataflow id="85" from="p_read" to="p_read_3" fromId="76" toId="5">
+</dataflow>
+<dataflow id="87" from="_ssdm_op_Read.ap_auto.i1" to="input_V_read_1" fromId="86" toId="6">
+</dataflow>
+<dataflow id="88" from="input_V_read" to="input_V_read_1" fromId="75" toId="6">
+</dataflow>
+<dataflow id="90" from="_ssdm_op_Read.ap_auto.i8" to="uart_to_coordinates_ck_b_V_rea_1" fromId="89" toId="7">
+</dataflow>
+<dataflow id="91" from="uart_to_coordinates_ck_b_V_read" to="uart_to_coordinates_ck_b_V_rea_1" fromId="71" toId="7">
+</dataflow>
+<dataflow id="92" from="_ssdm_op_Read.ap_auto.i8" to="uart_to_coordinates_ck_a_V_rea_1" fromId="89" toId="8">
+</dataflow>
+<dataflow id="93" from="uart_to_coordinates_ck_a_V_read" to="uart_to_coordinates_ck_a_V_rea_1" fromId="70" toId="8">
+</dataflow>
+<dataflow id="95" from="_ssdm_op_Read.ap_auto.i6" to="uart_to_coordinates_gnss_state_1" fromId="94" toId="9">
+</dataflow>
+<dataflow id="96" from="uart_to_coordinates_gnss_state_V_read" to="uart_to_coordinates_gnss_state_1" fromId="69" toId="9">
+</dataflow>
+<dataflow id="97" from="_ssdm_op_Read.ap_auto.i8" to="uart_to_coordinates_current_ou_3" fromId="89" toId="10">
+</dataflow>
+<dataflow id="98" from="uart_to_coordinates_current_out_byte_V_read" to="uart_to_coordinates_current_ou_3" fromId="68" toId="10">
+</dataflow>
+<dataflow id="100" from="master_ip_uart_to_byte" to="call_ret6" fromId="99" toId="11">
+</dataflow>
+<dataflow id="101" from="uart_to_coordinates_count_V" to="call_ret6" fromId="64" toId="11">
+</dataflow>
+<dataflow id="102" from="uart_to_coordinates_previous_input_V" to="call_ret6" fromId="65" toId="11">
+</dataflow>
+<dataflow id="103" from="input_V_read_1" to="call_ret6" fromId="6" toId="11">
+</dataflow>
+<dataflow id="104" from="uart_to_coordinates_uart_state_V" to="call_ret6" fromId="66" toId="11">
+</dataflow>
+<dataflow id="105" from="uart_to_coordinates_next_out_byte_V" to="call_ret6" fromId="67" toId="11">
+</dataflow>
+<dataflow id="106" from="uart_to_coordinates_current_ou_3" to="call_ret6" fromId="10" toId="11">
+</dataflow>
+<dataflow id="107" from="call_ret6" to="tmp" fromId="11" toId="12">
+</dataflow>
+<dataflow id="108" from="call_ret6" to="uart_to_coordinates_current_ou" fromId="11" toId="13">
+</dataflow>
+<dataflow id="109" from="tmp" to="stg_14" fromId="12" toId="14">
+</dataflow>
+<dataflow id="110" from="uart_to_coordinates_current_ou" to="tmp_i" fromId="13" toId="15">
+</dataflow>
+<dataflow id="111" from="uart_to_coordinates_ck_a_V_rea_1" to="tmp_i" fromId="8" toId="15">
+</dataflow>
+<dataflow id="112" from="tmp_i" to="tmp_85_i" fromId="15" toId="16">
+</dataflow>
+<dataflow id="113" from="uart_to_coordinates_ck_b_V_rea_1" to="tmp_85_i" fromId="7" toId="16">
+</dataflow>
+<dataflow id="114" from="uart_to_coordinates_gnss_state_1" to="tmp_86_i" fromId="9" toId="17">
+</dataflow>
+<dataflow id="116" from="stg_115" to="tmp_86_i" fromId="115" toId="17">
+</dataflow>
+<dataflow id="117" from="uart_to_coordinates_gnss_state_1" to="tmp_87_i" fromId="9" toId="18">
+</dataflow>
+<dataflow id="119" from="stg_118" to="tmp_87_i" fromId="118" toId="18">
+</dataflow>
+<dataflow id="120" from="tmp_86_i" to="or_cond4_i" fromId="17" toId="19">
+</dataflow>
+<dataflow id="121" from="tmp_87_i" to="or_cond4_i" fromId="18" toId="19">
+</dataflow>
+<dataflow id="122" from="or_cond4_i" to="uart_to_coordinates_ck_a_V_rea" fromId="19" toId="20">
+</dataflow>
+<dataflow id="123" from="uart_to_coordinates_ck_a_V_rea_1" to="uart_to_coordinates_ck_a_V_rea" fromId="8" toId="20">
+</dataflow>
+<dataflow id="125" from="stg_124" to="uart_to_coordinates_ck_a_V_rea" fromId="124" toId="20">
+</dataflow>
+<dataflow id="126" from="or_cond4_i" to="uart_to_coordinates_ck_b_V_rea" fromId="19" toId="21">
+</dataflow>
+<dataflow id="127" from="uart_to_coordinates_ck_b_V_rea_1" to="uart_to_coordinates_ck_b_V_rea" fromId="7" toId="21">
+</dataflow>
+<dataflow id="128" from="stg_124" to="uart_to_coordinates_ck_b_V_rea" fromId="124" toId="21">
+</dataflow>
+<dataflow id="129" from="uart_to_coordinates_gnss_state_1" to="sel_tmp" fromId="9" toId="22">
+</dataflow>
+<dataflow id="131" from="stg_130" to="sel_tmp" fromId="130" toId="22">
+</dataflow>
+<dataflow id="132" from="uart_to_coordinates_gnss_state_1" to="sel_tmp1" fromId="9" toId="23">
+</dataflow>
+<dataflow id="134" from="stg_133" to="sel_tmp1" fromId="133" toId="23">
+</dataflow>
+<dataflow id="135" from="uart_to_coordinates_gnss_state_1" to="sel_tmp2" fromId="9" toId="24">
+</dataflow>
+<dataflow id="137" from="stg_136" to="sel_tmp2" fromId="136" toId="24">
+</dataflow>
+<dataflow id="138" from="uart_to_coordinates_gnss_state_1" to="sel_tmp3" fromId="9" toId="25">
+</dataflow>
+<dataflow id="139" from="stg_118" to="sel_tmp3" fromId="118" toId="25">
+</dataflow>
+<dataflow id="140" from="uart_to_coordinates_gnss_state_1" to="sel_tmp4" fromId="9" toId="26">
+</dataflow>
+<dataflow id="142" from="stg_141" to="sel_tmp4" fromId="141" toId="26">
+</dataflow>
+<dataflow id="143" from="uart_to_coordinates_gnss_state_1" to="sel_tmp5" fromId="9" toId="27">
+</dataflow>
+<dataflow id="145" from="stg_144" to="sel_tmp5" fromId="144" toId="27">
+</dataflow>
+<dataflow id="146" from="uart_to_coordinates_gnss_state_1" to="sel_tmp6" fromId="9" toId="28">
+</dataflow>
+<dataflow id="148" from="stg_147" to="sel_tmp6" fromId="147" toId="28">
+</dataflow>
+<dataflow id="149" from="uart_to_coordinates_gnss_state_1" to="sel_tmp7" fromId="9" toId="29">
+</dataflow>
+<dataflow id="151" from="stg_150" to="sel_tmp7" fromId="150" toId="29">
+</dataflow>
+<dataflow id="152" from="sel_tmp5" to="tmp6" fromId="27" toId="30">
+</dataflow>
+<dataflow id="153" from="sel_tmp6" to="tmp6" fromId="28" toId="30">
+</dataflow>
+<dataflow id="154" from="sel_tmp4" to="tmp7" fromId="26" toId="31">
+</dataflow>
+<dataflow id="155" from="sel_tmp3" to="tmp7" fromId="25" toId="31">
+</dataflow>
+<dataflow id="156" from="tmp7" to="tmp8" fromId="31" toId="32">
+</dataflow>
+<dataflow id="157" from="tmp6" to="tmp8" fromId="30" toId="32">
+</dataflow>
+<dataflow id="158" from="sel_tmp" to="tmp9" fromId="22" toId="33">
+</dataflow>
+<dataflow id="159" from="sel_tmp2" to="tmp9" fromId="24" toId="33">
+</dataflow>
+<dataflow id="160" from="sel_tmp1" to="tmp10" fromId="23" toId="34">
+</dataflow>
+<dataflow id="161" from="sel_tmp7" to="tmp10" fromId="29" toId="34">
+</dataflow>
+<dataflow id="162" from="tmp10" to="tmp11" fromId="34" toId="35">
+</dataflow>
+<dataflow id="163" from="tmp9" to="tmp11" fromId="33" toId="35">
+</dataflow>
+<dataflow id="164" from="tmp11" to="sel_tmp8" fromId="35" toId="36">
+</dataflow>
+<dataflow id="165" from="tmp8" to="sel_tmp8" fromId="32" toId="36">
+</dataflow>
+<dataflow id="166" from="sel_tmp8" to="uart_to_coordinates_ck_a_V_1_i" fromId="36" toId="37">
+</dataflow>
+<dataflow id="167" from="uart_to_coordinates_ck_a_V_rea" to="uart_to_coordinates_ck_a_V_1_i" fromId="20" toId="37">
+</dataflow>
+<dataflow id="168" from="tmp_i" to="uart_to_coordinates_ck_a_V_1_i" fromId="15" toId="37">
+</dataflow>
+<dataflow id="169" from="sel_tmp8" to="uart_to_coordinates_ck_b_V_1_i" fromId="36" toId="38">
+</dataflow>
+<dataflow id="170" from="uart_to_coordinates_ck_b_V_rea" to="uart_to_coordinates_ck_b_V_1_i" fromId="21" toId="38">
+</dataflow>
+<dataflow id="171" from="tmp_85_i" to="uart_to_coordinates_ck_b_V_1_i" fromId="16" toId="38">
+</dataflow>
+<dataflow id="173" from="master_ip_get_gps_info_from_ubx" to="call_ret5" fromId="172" toId="39">
+</dataflow>
+<dataflow id="174" from="uart_to_coordinates_current_ou" to="call_ret5" fromId="13" toId="39">
+</dataflow>
+<dataflow id="175" from="uart_to_coordinates_gnss_state_1" to="call_ret5" fromId="9" toId="39">
+</dataflow>
+<dataflow id="176" from="uart_to_coordinates_ck_a_V_1_i" to="call_ret5" fromId="37" toId="39">
+</dataflow>
+<dataflow id="177" from="uart_to_coordinates_ck_b_V_1_i" to="call_ret5" fromId="38" toId="39">
+</dataflow>
+<dataflow id="178" from="uart_to_coordinates_tempCoordinates_0" to="call_ret5" fromId="72" toId="39">
+</dataflow>
+<dataflow id="179" from="uart_to_coordinates_tempCoordinates_1" to="call_ret5" fromId="73" toId="39">
+</dataflow>
+<dataflow id="180" from="uart_to_coordinates_tempCoordinates_2" to="call_ret5" fromId="74" toId="39">
+</dataflow>
+<dataflow id="181" from="p_read_3" to="call_ret5" fromId="5" toId="39">
+</dataflow>
+<dataflow id="182" from="p_read_2" to="call_ret5" fromId="4" toId="39">
+</dataflow>
+<dataflow id="183" from="p_read_1" to="call_ret5" fromId="3" toId="39">
+</dataflow>
+<dataflow id="184" from="call_ret5" to="call_ret2" fromId="39" toId="40">
+</dataflow>
+<dataflow id="185" from="call_ret5" to="coordinates_0_ret" fromId="39" toId="41">
+</dataflow>
+<dataflow id="186" from="call_ret5" to="coordinates_1_ret" fromId="39" toId="42">
+</dataflow>
+<dataflow id="187" from="call_ret5" to="coordinates_2_ret" fromId="39" toId="43">
+</dataflow>
+<dataflow id="188" from="p_read_3" to="coordinates" fromId="5" toId="45">
+<condition id="21">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="189" from="stg_14" to="coordinates" fromId="14" toId="45">
+</dataflow>
+<dataflow id="190" from="coordinates_0_ret" to="coordinates" fromId="41" toId="45">
+<condition id="23">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="191" from="stg_44" to="coordinates" fromId="44" toId="45">
+</dataflow>
+<dataflow id="192" from="p_read_2" to="coordinates_1" fromId="4" toId="46">
+<condition id="24">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="193" from="stg_14" to="coordinates_1" fromId="14" toId="46">
+</dataflow>
+<dataflow id="194" from="coordinates_1_ret" to="coordinates_1" fromId="42" toId="46">
+<condition id="25">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="195" from="stg_44" to="coordinates_1" fromId="44" toId="46">
+</dataflow>
+<dataflow id="196" from="p_read_1" to="coordinates_2" fromId="3" toId="47">
+<condition id="26">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="197" from="stg_14" to="coordinates_2" fromId="14" toId="47">
+</dataflow>
+<dataflow id="198" from="coordinates_2_ret" to="coordinates_2" fromId="43" toId="47">
+<condition id="27">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="199" from="stg_44" to="coordinates_2" fromId="44" toId="47">
+</dataflow>
+<dataflow id="200" from="uart_to_coordinates_ck_a_V_rea_1" to="uart_to_coordinates_ck_a_V" fromId="8" toId="48">
+<condition id="28">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="201" from="stg_14" to="uart_to_coordinates_ck_a_V" fromId="14" toId="48">
+</dataflow>
+<dataflow id="202" from="uart_to_coordinates_ck_a_V_1_i" to="uart_to_coordinates_ck_a_V" fromId="37" toId="48">
+<condition id="29">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="203" from="stg_44" to="uart_to_coordinates_ck_a_V" fromId="44" toId="48">
+</dataflow>
+<dataflow id="204" from="uart_to_coordinates_ck_b_V_rea_1" to="uart_to_coordinates_ck_b_V" fromId="7" toId="49">
+<condition id="30">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="205" from="stg_14" to="uart_to_coordinates_ck_b_V" fromId="14" toId="49">
+</dataflow>
+<dataflow id="206" from="uart_to_coordinates_ck_b_V_1_i" to="uart_to_coordinates_ck_b_V" fromId="38" toId="49">
+<condition id="31">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="207" from="stg_44" to="uart_to_coordinates_ck_b_V" fromId="44" toId="49">
+</dataflow>
+<dataflow id="208" from="uart_to_coordinates_gnss_state_1" to="uart_to_coordinates_gnss_state" fromId="9" toId="50">
+<condition id="32">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="209" from="stg_14" to="uart_to_coordinates_gnss_state" fromId="14" toId="50">
+</dataflow>
+<dataflow id="210" from="call_ret2" to="uart_to_coordinates_gnss_state" fromId="40" toId="50">
+<condition id="33">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp></or_exp>
+</condition>
+</dataflow>
+<dataflow id="211" from="stg_44" to="uart_to_coordinates_gnss_state" fromId="44" toId="50">
+</dataflow>
+<dataflow id="213" from="stg_212" to="newret" fromId="212" toId="51">
+</dataflow>
+<dataflow id="214" from="uart_to_coordinates_ck_a_V" to="newret" fromId="48" toId="51">
+</dataflow>
+<dataflow id="215" from="newret" to="newret2" fromId="51" toId="52">
+</dataflow>
+<dataflow id="216" from="uart_to_coordinates_ck_b_V" to="newret2" fromId="49" toId="52">
+</dataflow>
+<dataflow id="217" from="newret2" to="newret4" fromId="52" toId="53">
+</dataflow>
+<dataflow id="218" from="uart_to_coordinates_current_ou" to="newret4" fromId="13" toId="53">
+</dataflow>
+<dataflow id="219" from="newret4" to="newret6" fromId="53" toId="54">
+</dataflow>
+<dataflow id="220" from="uart_to_coordinates_gnss_state" to="newret6" fromId="50" toId="54">
+</dataflow>
+<dataflow id="221" from="newret6" to="newret8" fromId="54" toId="55">
+</dataflow>
+<dataflow id="222" from="coordinates" to="newret8" fromId="45" toId="55">
+</dataflow>
+<dataflow id="223" from="newret8" to="newret1" fromId="55" toId="56">
+</dataflow>
+<dataflow id="224" from="coordinates_1" to="newret1" fromId="46" toId="56">
+</dataflow>
+<dataflow id="225" from="newret1" to="newret3" fromId="56" toId="57">
+</dataflow>
+<dataflow id="226" from="coordinates_2" to="newret3" fromId="47" toId="57">
+</dataflow>
+<dataflow id="227" from="newret3" to="stg_58" fromId="57" toId="58">
+</dataflow>
+<dataflow id="228" from="tmp" to="stg_1" fromId="12" toId="1">
+</dataflow>
+<dataflow id="229" from="tmp" to="stg_2" fromId="12" toId="2">
+</dataflow>
+</dataflows>
+
+
+</stg>

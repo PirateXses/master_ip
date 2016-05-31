@@ -1,0 +1,229 @@
+
+
+================================================================
+== Vivado HLS Report for 'master_ip_mainFunction'
+================================================================
+* Date:           Wed May 11 13:22:17 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        master_ip
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  20.00|     27.32|        2.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+---------------------------------+-----+-----+-----+-----+----------+
+        |                                                  |                                 |  Latency  |  Interval | Pipeline |
+        |                     Instance                     |              Module             | min | max | min | max |   Type   |
+        +--------------------------------------------------+---------------------------------+-----+-----+-----+-----+----------+
+        |call_ret5_master_ip_get_gps_info_from_ubx_fu_166  |master_ip_get_gps_info_from_ubx  |    0|    0|    1|    1| function |
+        |call_ret6_master_ip_uart_to_byte_fu_187           |master_ip_uart_to_byte           |    0|    0|    1|    1| function |
+        +--------------------------------------------------+---------------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     87|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       0|   1278|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    361|
+|Register         |        -|      -|     247|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     247|   1726|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |      3|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+---------------------------------+---------+-------+---+-----+
+    |                     Instance                     |              Module             | BRAM_18K| DSP48E| FF| LUT |
+    +--------------------------------------------------+---------------------------------+---------+-------+---+-----+
+    |call_ret5_master_ip_get_gps_info_from_ubx_fu_166  |master_ip_get_gps_info_from_ubx  |        0|      0|  0|  754|
+    |call_ret6_master_ip_uart_to_byte_fu_187           |master_ip_uart_to_byte           |        0|      0|  0|  524|
+    +--------------------------------------------------+---------------------------------+---------+-------+---+-----+
+    |Total                                             |                                 |        0|      0|  0| 1278|
+    +--------------------------------------------------+---------------------------------+---------+-------+---+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |                                   Variable Name                                  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |tmp_85_i_fu_218_p2                                                                |     +    |      0|  0|   8|           8|           8|
+    |tmp_i_fu_212_p2                                                                   |     +    |      0|  0|   8|           8|           8|
+    |call_ret5_master_ip_get_gps_info_from_ubx_fu_166_uart_to_coordinates_ck_a_V_read  |  Select  |      0|  0|   8|           1|           8|
+    |call_ret5_master_ip_get_gps_info_from_ubx_fu_166_uart_to_coordinates_ck_b_V_read  |  Select  |      0|  0|   8|           1|           8|
+    |uart_to_coordinates_ck_a_V_rea_fu_242_p3                                          |  Select  |      0|  0|   8|           1|           8|
+    |uart_to_coordinates_ck_b_V_rea_fu_250_p3                                          |  Select  |      0|  0|   8|           1|           8|
+    |ap_sig_bdd_42                                                                     |    and   |      0|  0|   1|           1|           1|
+    |or_cond4_i_fu_236_p2                                                              |    and   |      0|  0|   1|           1|           1|
+    |sel_tmp1_fu_264_p2                                                                |   icmp   |      0|  0|   3|           6|           3|
+    |sel_tmp2_fu_270_p2                                                                |   icmp   |      0|  0|   3|           6|           3|
+    |sel_tmp3_fu_276_p2                                                                |   icmp   |      0|  0|   3|           6|           4|
+    |sel_tmp4_fu_282_p2                                                                |   icmp   |      0|  0|   3|           6|           4|
+    |sel_tmp5_fu_288_p2                                                                |   icmp   |      0|  0|   3|           6|           4|
+    |sel_tmp6_fu_294_p2                                                                |   icmp   |      0|  0|   3|           6|           1|
+    |sel_tmp7_fu_300_p2                                                                |   icmp   |      0|  0|   3|           6|           1|
+    |sel_tmp_fu_258_p2                                                                 |   icmp   |      0|  0|   3|           6|           2|
+    |tmp_86_i_fu_224_p2                                                                |   icmp   |      0|  0|   3|           6|           4|
+    |tmp_87_i_fu_230_p2                                                                |   icmp   |      0|  0|   3|           6|           4|
+    |sel_tmp8_fu_342_p2                                                                |    or    |      0|  0|   1|           1|           1|
+    |tmp10_fu_330_p2                                                                   |    or    |      0|  0|   1|           1|           1|
+    |tmp11_fu_336_p2                                                                   |    or    |      0|  0|   1|           1|           1|
+    |tmp6_fu_306_p2                                                                    |    or    |      0|  0|   1|           1|           1|
+    |tmp7_fu_312_p2                                                                    |    or    |      0|  0|   1|           1|           1|
+    |tmp8_fu_318_p2                                                                    |    or    |      0|  0|   1|           1|           1|
+    |tmp9_fu_324_p2                                                                    |    or    |      0|  0|   1|           1|           1|
+    +----------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                                                             |          |      0|  0|  87|          89|          87|
+    +----------------------------------------------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |                              Name                              | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_reg_phiprechg_coordinates_1_reg_121pp0_it1                   |  32|          2|   32|         64|
+    |ap_reg_phiprechg_coordinates_2_reg_130pp0_it1                   |  32|          2|   32|         64|
+    |ap_reg_phiprechg_coordinates_reg_112pp0_it1                     |  32|          2|   32|         64|
+    |ap_reg_phiprechg_uart_to_coordinates_ck_a_V_reg_139pp0_it1      |   8|          2|    8|         16|
+    |ap_reg_phiprechg_uart_to_coordinates_ck_b_V_reg_148pp0_it1      |   8|          2|    8|         16|
+    |ap_reg_phiprechg_uart_to_coordinates_gnss_state_reg_157pp0_it1  |   6|          2|    6|         12|
+    |coordinates_1_phi_fu_124_p4                                     |  32|          2|   32|         64|
+    |coordinates_2_phi_fu_133_p4                                     |  32|          2|   32|         64|
+    |coordinates_phi_fu_115_p4                                       |  32|          2|   32|         64|
+    |uart_to_coordinates_ck_a_V_phi_fu_142_p4                        |   8|          2|    8|         16|
+    |uart_to_coordinates_ck_b_V_phi_fu_151_p4                        |   8|          2|    8|         16|
+    |uart_to_coordinates_count_V_o                                   |  16|          2|   16|         32|
+    |uart_to_coordinates_gnss_state_phi_fu_160_p4                    |   6|          2|    6|         12|
+    |uart_to_coordinates_next_out_byte_V_o                           |   8|          2|    8|         16|
+    |uart_to_coordinates_previous_input_V_o                          |   1|          2|    1|          2|
+    |uart_to_coordinates_tempCoordinates_0_o                         |  32|          2|   32|         64|
+    |uart_to_coordinates_tempCoordinates_1_o                         |  32|          2|   32|         64|
+    |uart_to_coordinates_tempCoordinates_2_o                         |  32|          2|   32|         64|
+    |uart_to_coordinates_uart_state_V_o                              |   4|          2|    4|          8|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                           | 361|         38|  361|        722|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                              | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                       |   1|   0|    1|          0|
+    |ap_reg_phiprechg_coordinates_1_reg_121pp0_it1                   |  32|   0|   32|          0|
+    |ap_reg_phiprechg_coordinates_2_reg_130pp0_it1                   |  32|   0|   32|          0|
+    |ap_reg_phiprechg_coordinates_reg_112pp0_it1                     |  32|   0|   32|          0|
+    |ap_reg_phiprechg_uart_to_coordinates_ck_a_V_reg_139pp0_it1      |   8|   0|    8|          0|
+    |ap_reg_phiprechg_uart_to_coordinates_ck_b_V_reg_148pp0_it1      |   8|   0|    8|          0|
+    |ap_reg_phiprechg_uart_to_coordinates_gnss_state_reg_157pp0_it1  |   6|   0|    6|          0|
+    |ap_reg_ppiten_pp0_it1                                           |   1|   0|    1|          0|
+    |call_ret2_reg_472                                               |   6|   0|    6|          0|
+    |coordinates_0_ret_reg_477                                       |  32|   0|   32|          0|
+    |coordinates_1_ret_reg_482                                       |  32|   0|   32|          0|
+    |coordinates_2_ret_reg_487                                       |  32|   0|   32|          0|
+    |tmp_reg_453                                                     |   1|   0|    1|          0|
+    |uart_to_coordinates_ck_a_V_1_i_reg_462                          |   8|   0|    8|          0|
+    |uart_to_coordinates_ck_b_V_1_i_reg_467                          |   8|   0|    8|          0|
+    |uart_to_coordinates_current_ou_reg_457                          |   8|   0|    8|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                           | 247|   0|  247|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+|                    RTL Ports                   | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+|ap_clk                                          |  in |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_rst                                          |  in |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_start                                        |  in |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_done                                         | out |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_idle                                         | out |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_ready                                        | out |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_ce                                           |  in |    1| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_0                                     | out |    8| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_1                                     | out |    8| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_2                                     | out |    8| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_3                                     | out |    6| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_4                                     | out |   32| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_5                                     | out |   32| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|ap_return_6                                     | out |   32| ap_ctrl_hs |            master_ip_mainFunction           | return value |
+|uart_to_coordinates_count_V_i                   |  in |   16|   ap_ovld  |         uart_to_coordinates_count_V         |    pointer   |
+|uart_to_coordinates_count_V_o                   | out |   16|   ap_ovld  |         uart_to_coordinates_count_V         |    pointer   |
+|uart_to_coordinates_count_V_o_ap_vld            | out |    1|   ap_ovld  |         uart_to_coordinates_count_V         |    pointer   |
+|uart_to_coordinates_previous_input_V_i          |  in |    1|   ap_ovld  |     uart_to_coordinates_previous_input_V    |    pointer   |
+|uart_to_coordinates_previous_input_V_o          | out |    1|   ap_ovld  |     uart_to_coordinates_previous_input_V    |    pointer   |
+|uart_to_coordinates_previous_input_V_o_ap_vld   | out |    1|   ap_ovld  |     uart_to_coordinates_previous_input_V    |    pointer   |
+|uart_to_coordinates_uart_state_V_i              |  in |    4|   ap_ovld  |       uart_to_coordinates_uart_state_V      |    pointer   |
+|uart_to_coordinates_uart_state_V_o              | out |    4|   ap_ovld  |       uart_to_coordinates_uart_state_V      |    pointer   |
+|uart_to_coordinates_uart_state_V_o_ap_vld       | out |    1|   ap_ovld  |       uart_to_coordinates_uart_state_V      |    pointer   |
+|uart_to_coordinates_next_out_byte_V_i           |  in |    8|   ap_ovld  |     uart_to_coordinates_next_out_byte_V     |    pointer   |
+|uart_to_coordinates_next_out_byte_V_o           | out |    8|   ap_ovld  |     uart_to_coordinates_next_out_byte_V     |    pointer   |
+|uart_to_coordinates_next_out_byte_V_o_ap_vld    | out |    1|   ap_ovld  |     uart_to_coordinates_next_out_byte_V     |    pointer   |
+|uart_to_coordinates_current_out_byte_V_read     |  in |    8|   ap_none  | uart_to_coordinates_current_out_byte_V_read |    scalar    |
+|uart_to_coordinates_gnss_state_V_read           |  in |    6|   ap_none  |    uart_to_coordinates_gnss_state_V_read    |    scalar    |
+|uart_to_coordinates_ck_a_V_read                 |  in |    8|   ap_none  |       uart_to_coordinates_ck_a_V_read       |    scalar    |
+|uart_to_coordinates_ck_b_V_read                 |  in |    8|   ap_none  |       uart_to_coordinates_ck_b_V_read       |    scalar    |
+|uart_to_coordinates_tempCoordinates_0_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_0_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_0_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_0    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_1_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_1    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_i         |  in |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_o         | out |   32|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|uart_to_coordinates_tempCoordinates_2_o_ap_vld  | out |    1|   ap_ovld  |    uart_to_coordinates_tempCoordinates_2    |    pointer   |
+|input_V_read                                    |  in |    1|   ap_none  |                 input_V_read                |    scalar    |
+|p_read                                          |  in |   32|   ap_none  |                    p_read                   |    scalar    |
+|p_read2                                         |  in |   32|   ap_none  |                   p_read2                   |    scalar    |
+|p_read5                                         |  in |   32|   ap_none  |                   p_read5                   |    scalar    |
++------------------------------------------------+-----+-----+------------+---------------------------------------------+--------------+
+

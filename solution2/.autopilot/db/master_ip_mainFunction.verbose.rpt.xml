@@ -1,0 +1,207 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'master_ip_mainFunction'" level="0">
+<item name = "Date">Wed May 11 13:22:17 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">master_ip</item>
+<item name = "Solution">solution2</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00, 27.32, 2.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1, 1, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="call_ret5_master_ip_get_gps_info_from_ubx_fu_166">master_ip_get_gps_info_from_ubx, 0, 0, 1, 1, function</column>
+<column name="call_ret6_master_ip_uart_to_byte_fu_187">master_ip_uart_to_byte, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 87</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 0, 1278</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 361</column>
+<column name="Register">-, -, 247, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 3</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="call_ret5_master_ip_get_gps_info_from_ubx_fu_166">master_ip_get_gps_info_from_ubx, 0, 0, 0, 754</column>
+<column name="call_ret6_master_ip_uart_to_byte_fu_187">master_ip_uart_to_byte, 0, 0, 0, 524</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_85_i_fu_218_p2">+, 0, 0, 8, 8, 8</column>
+<column name="tmp_i_fu_212_p2">+, 0, 0, 8, 8, 8</column>
+<column name="call_ret5_master_ip_get_gps_info_from_ubx_fu_166_uart_to_coordinates_ck_a_V_read">Select, 0, 0, 8, 1, 8</column>
+<column name="call_ret5_master_ip_get_gps_info_from_ubx_fu_166_uart_to_coordinates_ck_b_V_read">Select, 0, 0, 8, 1, 8</column>
+<column name="uart_to_coordinates_ck_a_V_rea_fu_242_p3">Select, 0, 0, 8, 1, 8</column>
+<column name="uart_to_coordinates_ck_b_V_rea_fu_250_p3">Select, 0, 0, 8, 1, 8</column>
+<column name="ap_sig_bdd_42">and, 0, 0, 1, 1, 1</column>
+<column name="or_cond4_i_fu_236_p2">and, 0, 0, 1, 1, 1</column>
+<column name="sel_tmp1_fu_264_p2">icmp, 0, 0, 3, 6, 3</column>
+<column name="sel_tmp2_fu_270_p2">icmp, 0, 0, 3, 6, 3</column>
+<column name="sel_tmp3_fu_276_p2">icmp, 0, 0, 3, 6, 4</column>
+<column name="sel_tmp4_fu_282_p2">icmp, 0, 0, 3, 6, 4</column>
+<column name="sel_tmp5_fu_288_p2">icmp, 0, 0, 3, 6, 4</column>
+<column name="sel_tmp6_fu_294_p2">icmp, 0, 0, 3, 6, 1</column>
+<column name="sel_tmp7_fu_300_p2">icmp, 0, 0, 3, 6, 1</column>
+<column name="sel_tmp_fu_258_p2">icmp, 0, 0, 3, 6, 2</column>
+<column name="tmp_86_i_fu_224_p2">icmp, 0, 0, 3, 6, 4</column>
+<column name="tmp_87_i_fu_230_p2">icmp, 0, 0, 3, 6, 4</column>
+<column name="sel_tmp8_fu_342_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp10_fu_330_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp11_fu_336_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp6_fu_306_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp7_fu_312_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp8_fu_318_p2">or, 0, 0, 1, 1, 1</column>
+<column name="tmp9_fu_324_p2">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_reg_phiprechg_coordinates_1_reg_121pp0_it1">32, 2, 32, 64</column>
+<column name="ap_reg_phiprechg_coordinates_2_reg_130pp0_it1">32, 2, 32, 64</column>
+<column name="ap_reg_phiprechg_coordinates_reg_112pp0_it1">32, 2, 32, 64</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_ck_a_V_reg_139pp0_it1">8, 2, 8, 16</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_ck_b_V_reg_148pp0_it1">8, 2, 8, 16</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_gnss_state_reg_157pp0_it1">6, 2, 6, 12</column>
+<column name="coordinates_1_phi_fu_124_p4">32, 2, 32, 64</column>
+<column name="coordinates_2_phi_fu_133_p4">32, 2, 32, 64</column>
+<column name="coordinates_phi_fu_115_p4">32, 2, 32, 64</column>
+<column name="uart_to_coordinates_ck_a_V_phi_fu_142_p4">8, 2, 8, 16</column>
+<column name="uart_to_coordinates_ck_b_V_phi_fu_151_p4">8, 2, 8, 16</column>
+<column name="uart_to_coordinates_count_V_o">16, 2, 16, 32</column>
+<column name="uart_to_coordinates_gnss_state_phi_fu_160_p4">6, 2, 6, 12</column>
+<column name="uart_to_coordinates_next_out_byte_V_o">8, 2, 8, 16</column>
+<column name="uart_to_coordinates_previous_input_V_o">1, 2, 1, 2</column>
+<column name="uart_to_coordinates_tempCoordinates_0_o">32, 2, 32, 64</column>
+<column name="uart_to_coordinates_tempCoordinates_1_o">32, 2, 32, 64</column>
+<column name="uart_to_coordinates_tempCoordinates_2_o">32, 2, 32, 64</column>
+<column name="uart_to_coordinates_uart_state_V_o">4, 2, 4, 8</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_reg_phiprechg_coordinates_1_reg_121pp0_it1">32, 0, 32, 0</column>
+<column name="ap_reg_phiprechg_coordinates_2_reg_130pp0_it1">32, 0, 32, 0</column>
+<column name="ap_reg_phiprechg_coordinates_reg_112pp0_it1">32, 0, 32, 0</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_ck_a_V_reg_139pp0_it1">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_ck_b_V_reg_148pp0_it1">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_uart_to_coordinates_gnss_state_reg_157pp0_it1">6, 0, 6, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="call_ret2_reg_472">6, 0, 6, 0</column>
+<column name="coordinates_0_ret_reg_477">32, 0, 32, 0</column>
+<column name="coordinates_1_ret_reg_482">32, 0, 32, 0</column>
+<column name="coordinates_2_ret_reg_487">32, 0, 32, 0</column>
+<column name="tmp_reg_453">1, 0, 1, 0</column>
+<column name="uart_to_coordinates_ck_a_V_1_i_reg_462">8, 0, 8, 0</column>
+<column name="uart_to_coordinates_ck_b_V_1_i_reg_467">8, 0, 8, 0</column>
+<column name="uart_to_coordinates_current_ou_reg_457">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_0">out, 8, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_1">out, 8, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_2">out, 8, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_3">out, 6, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_4">out, 32, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_5">out, 32, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="ap_return_6">out, 32, ap_ctrl_hs, master_ip_mainFunction, return value</column>
+<column name="uart_to_coordinates_count_V_i">in, 16, ap_ovld, uart_to_coordinates_count_V, pointer</column>
+<column name="uart_to_coordinates_count_V_o">out, 16, ap_ovld, uart_to_coordinates_count_V, pointer</column>
+<column name="uart_to_coordinates_count_V_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_count_V, pointer</column>
+<column name="uart_to_coordinates_previous_input_V_i">in, 1, ap_ovld, uart_to_coordinates_previous_input_V, pointer</column>
+<column name="uart_to_coordinates_previous_input_V_o">out, 1, ap_ovld, uart_to_coordinates_previous_input_V, pointer</column>
+<column name="uart_to_coordinates_previous_input_V_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_previous_input_V, pointer</column>
+<column name="uart_to_coordinates_uart_state_V_i">in, 4, ap_ovld, uart_to_coordinates_uart_state_V, pointer</column>
+<column name="uart_to_coordinates_uart_state_V_o">out, 4, ap_ovld, uart_to_coordinates_uart_state_V, pointer</column>
+<column name="uart_to_coordinates_uart_state_V_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_uart_state_V, pointer</column>
+<column name="uart_to_coordinates_next_out_byte_V_i">in, 8, ap_ovld, uart_to_coordinates_next_out_byte_V, pointer</column>
+<column name="uart_to_coordinates_next_out_byte_V_o">out, 8, ap_ovld, uart_to_coordinates_next_out_byte_V, pointer</column>
+<column name="uart_to_coordinates_next_out_byte_V_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_next_out_byte_V, pointer</column>
+<column name="uart_to_coordinates_current_out_byte_V_read">in, 8, ap_none, uart_to_coordinates_current_out_byte_V_read, scalar</column>
+<column name="uart_to_coordinates_gnss_state_V_read">in, 6, ap_none, uart_to_coordinates_gnss_state_V_read, scalar</column>
+<column name="uart_to_coordinates_ck_a_V_read">in, 8, ap_none, uart_to_coordinates_ck_a_V_read, scalar</column>
+<column name="uart_to_coordinates_ck_b_V_read">in, 8, ap_none, uart_to_coordinates_ck_b_V_read, scalar</column>
+<column name="uart_to_coordinates_tempCoordinates_0_i">in, 32, ap_ovld, uart_to_coordinates_tempCoordinates_0, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_0_o">out, 32, ap_ovld, uart_to_coordinates_tempCoordinates_0, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_0_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_tempCoordinates_0, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_1_i">in, 32, ap_ovld, uart_to_coordinates_tempCoordinates_1, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_1_o">out, 32, ap_ovld, uart_to_coordinates_tempCoordinates_1, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_1_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_tempCoordinates_1, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_2_i">in, 32, ap_ovld, uart_to_coordinates_tempCoordinates_2, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_2_o">out, 32, ap_ovld, uart_to_coordinates_tempCoordinates_2, pointer</column>
+<column name="uart_to_coordinates_tempCoordinates_2_o_ap_vld">out, 1, ap_ovld, uart_to_coordinates_tempCoordinates_2, pointer</column>
+<column name="input_V_read">in, 1, ap_none, input_V_read, scalar</column>
+<column name="p_read">in, 32, ap_none, p_read, scalar</column>
+<column name="p_read2">in, 32, ap_none, p_read2, scalar</column>
+<column name="p_read5">in, 32, ap_none, p_read5, scalar</column>
+</table>
+</item>
+</section>
+</profile>

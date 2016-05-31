@@ -1,0 +1,121 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_ctrl_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="return" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="differ_in_3D" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="coordinates2" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="uart_to_coordinates::uart_to_byte" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::databit" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::mainFunction" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::stopbit" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::get_gps_info_from_ubx" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::calculate_ubx_checksum" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="differ_in_3D" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="uart_to_coordinates::mainFunction" label="" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="differ_in_3D" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="coordinates1" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="cppm_to_horizontal_movement" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="cppm_to_horizontal_movement::main_function" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="cppm_to_horizontal_movement" label="cppm_to_horizontal_movement_label0" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="velocity1" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="velocity2" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="in_gnss1" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="in_gnss2" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="in_gcs_rx" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="out_alert" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="out_gnss" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="out_gcs_rx" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="master_ip" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="ap_none" value="" positionalBoolean="mode"/>
+                <option name="port" value="in_gnss3" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

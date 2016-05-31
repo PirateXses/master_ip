@@ -1,0 +1,248 @@
+@I [HLS-0] Workspace C:/Users/mxfr/Vivado/master_ip/solution3 opened at Tue May 31 01:41:19 +0200 2016
+@I [HLS-100] Command "config_clock -quiet -name default -period 20 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 20ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.974 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.975 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.977 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.978 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.978 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.979 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 0.979 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.980 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.981 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.982 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.982 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 0.984 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.985 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.986 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 0.992 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.992 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.993 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.993 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.994 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 0.995 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.995 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.996 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.996 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.996 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.023Total elapsed time: 0.997 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.1 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.2 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.5 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 1.11 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.21 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.21 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012Total elapsed time: 1.33 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 1.44 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 1.50 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.50 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142Total elapsed time: 1.192 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.224 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 1.225 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.235 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.052Total elapsed time: 1.244 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.246Total elapsed time: 1.244 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.246 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.249Total elapsed time: 1.246 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.249Total elapsed time: 1.246 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.247 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_hp.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.249 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 1.252 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.270 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.271 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.272 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.272 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.273 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 1.274 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.274 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/zynq_hp.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.276 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.034Total elapsed time: 1.281 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2015.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.283 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.284 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.290 sec.
+@I [HLS-100] Command "license_isbetapart xc7z020 "
+@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 0.018Total elapsed time: 1.309 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.310 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.310 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.310 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.023Total elapsed time: 1.312 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.313 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.002Total elapsed time: 1.315 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.03Total elapsed time: 1.315 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.315 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0.001Total elapsed time: 1.315 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.315 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.364Total elapsed time: 1.316 sec.
+@I [HLS-100] Command "csim_design -O -clean -quiet "
+@I [HLS-100] Command "source csim/.lst_opt.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.488 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_test.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.538 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_test.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.538 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_test_1.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.539 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_test_1.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.539 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_test_2.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.539 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_test_2.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0.001Total elapsed time: 1.540 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_test_3.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.540 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_test_3.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.540 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testData_CPPMMovementFalse_DataValidTrue.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.541 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testData_CPPMMovementFalse_DataValidTrue.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.541 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testData_CPPMMovementTrue_DataValidTrue.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.541 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testData_CPPMMovementTrue_DataValidTrue.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.541 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementFalse_DataValidTrue.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.542 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementFalse_DataValidTrue.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.542 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementTrue_DataValidFalse.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.542 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementTrue_DataValidFalse.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.542 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementTrue_DataValidTrue.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.543 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testData_GNSSMovementTrue_DataValidTrue.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.543 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testInputData.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.543 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testInputData.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.543 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testResultData.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.544 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testResultData.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.544 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testResultData1.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.544 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testResultData1.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.544 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testResultData2.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.544 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testResultData2.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0.001Total elapsed time: 1.545 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/testResultData3.txt "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.545 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/testResultData3.txt "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.545 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/cppm_to_horizontal_movement.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.545 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/cppm_to_horizontal_movement.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0.001Total elapsed time: 1.546 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/cppm_to_horizontal_movement.h "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.546 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/cppm_to_horizontal_movement.h "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.546 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.547 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.547 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip.h "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.547 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip.h "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0.001Total elapsed time: 1.548 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_1.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.548 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_1.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.548 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_2.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.549 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_2.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.549 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/master_ip_3.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.549 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/master_ip_3.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.549 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/uart_to_coordinates.cpp "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.001Total elapsed time: 1.550 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/uart_to_coordinates.cpp "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0Total elapsed time: 1.550 sec.
+@I [HLS-100] Command "is_encrypted C:/Users/mxfr/Vivado/master_ip/uart_to_coordinates.h "
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0Total elapsed time: 1.550 sec.
+@I [HLS-100] Command "is_xip C:/Users/mxfr/Vivado/master_ip/uart_to_coordinates.h "
+@I [HLS-100] Command 'is_xip' returned 0; elapsed 0.001Total elapsed time: 1.551 sec.
+@I [HLS-100] Command "source run_sim.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.5Total elapsed time: 9.936 sec.
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-100] Command 'csim_design' returned 0; elapsed 8.632Total elapsed time: 9.949 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.003Total elapsed time: 9.949 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 9.949 sec.

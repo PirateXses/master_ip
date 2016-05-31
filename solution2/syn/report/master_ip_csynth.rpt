@@ -1,0 +1,256 @@
+
+
+================================================================
+== Vivado HLS Report for 'master_ip'
+================================================================
+* Date:           Wed May 11 13:22:18 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        master_ip
+* Solution:       solution2
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  20.00|     27.32|        2.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   37|   37|    2|    2| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------+------------------------+-----+-----+-----+-----+----------+
+        |                                   |                        |  Latency  |  Interval | Pipeline |
+        |              Instance             |         Module         | min | max | min | max |   Type   |
+        +-----------------------------------+------------------------+-----+-----+-----+-----+----------+
+        |grp_master_ip_mainFunction_fu_143  |master_ip_mainFunction  |    1|    1|    1|    1| function |
+        +-----------------------------------+------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    824|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|     25|    2763|   7279|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    542|
+|Register         |        -|      -|    1378|     64|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     25|    4141|   8709|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     11|       3|     16|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------+----------------------------------------+---------+-------+------+------+
+    |                  Instance                  |                 Module                 | BRAM_18K| DSP48E|  FF  |  LUT |
+    +--------------------------------------------+----------------------------------------+---------+-------+------+------+
+    |master_ip_AXILiteS_s_axi_U                  |master_ip_AXILiteS_s_axi                |        0|      0|    44|    56|
+    |master_ip_dadd_64ns_64ns_64_4_full_dsp_U31  |master_ip_dadd_64ns_64ns_64_4_full_dsp  |        0|      3|   430|  1130|
+    |master_ip_dmul_64ns_64ns_64_4_max_dsp_U32   |master_ip_dmul_64ns_64ns_64_4_max_dsp   |        0|     11|   275|   558|
+    |master_ip_dmul_64ns_64ns_64_4_max_dsp_U33   |master_ip_dmul_64ns_64ns_64_4_max_dsp   |        0|     11|   275|   558|
+    |master_ip_dsqrt_64ns_64ns_64_17_U36         |master_ip_dsqrt_64ns_64ns_64_17         |        0|      0|  1114|  2095|
+    |grp_master_ip_mainFunction_fu_143           |master_ip_mainFunction                  |        0|      0|   247|  1726|
+    |master_ip_sitodp_32ns_64_3_U34              |master_ip_sitodp_32ns_64_3              |        0|      0|   189|   578|
+    |master_ip_sitodp_32ns_64_3_U35              |master_ip_sitodp_32ns_64_3              |        0|      0|   189|   578|
+    +--------------------------------------------+----------------------------------------+---------+-------+------+------+
+    |Total                                       |                                        |        0|     25|  2763|  7279|
+    +--------------------------------------------+----------------------------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+-------+---+-----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+-----+------------+------------+
+    |sh_assign_fu_435_p2       |     +    |      0|  0|   12|          11|          12|
+    |p_Val2_7_i_i_i_fu_521_p2  |     -    |      0|  0|   32|           1|          32|
+    |tmp_100_i_fu_393_p2       |     -    |      0|  0|   32|          32|          32|
+    |tmp_96_i_fu_388_p2        |     -    |      0|  0|   32|          32|          32|
+    |tmp_i_fu_383_p2           |     -    |      0|  0|   32|          32|          32|
+    |tmp_i_i_i_13_fu_449_p2    |     -    |      0|  0|   11|          10|          11|
+    |p_Val2_3_fu_514_p3        |  Select  |      0|  0|   32|           1|          32|
+    |p_Val2_5_fu_527_p3        |  Select  |      0|  0|   32|           1|          32|
+    |sh_assign_1_fu_459_p3     |  Select  |      0|  0|   12|           1|          12|
+    |alert_V                   |   icmp   |      0|  0|   11|          32|          10|
+    |tmp_89_i_i_i_fu_475_p2    |   lshr   |      0|  0|  157|          53|          53|
+    |tmp_91_i_i_i_fu_495_p2    |    shl   |      0|  0|  429|         136|         136|
+    +--------------------------+----------+-------+---+-----+------------+------------+
+    |Total                     |          |      0|  0|  824|         342|         426|
+    +--------------------------+----------+-------+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                      Name                                     | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                                                      |   1|          3|    1|          3|
+    |grp_fu_178_p0                                                                  |  64|          3|   64|        192|
+    |grp_fu_178_p1                                                                  |  64|          3|   64|        192|
+    |grp_fu_182_p0                                                                  |  64|          3|   64|        192|
+    |grp_fu_182_p1                                                                  |  64|          3|   64|        192|
+    |grp_fu_190_p0                                                                  |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_ap_start                                     |   1|          2|    1|          2|
+    |grp_master_ip_mainFunction_fu_143_input_V_read                                 |   1|          3|    1|          3|
+    |grp_master_ip_mainFunction_fu_143_p_read                                       |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_p_read2                                      |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_p_read5                                      |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_ck_a_V_read              |   8|          3|    8|         24|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_ck_b_V_read              |   8|          3|    8|         24|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_count_V_i                |  16|          3|   16|         48|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_current_out_byte_V_read  |   8|          3|    8|         24|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_gnss_state_V_read        |   6|          3|    6|         18|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_next_out_byte_V_i        |   8|          3|    8|         24|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_previous_input_V_i       |   1|          3|    1|          3|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_tempCoordinates_0_i      |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_tempCoordinates_1_i      |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_tempCoordinates_2_i      |  32|          3|   32|         96|
+    |grp_master_ip_mainFunction_fu_143_uart_to_coordinates_uart_state_V_i           |   4|          3|    4|         12|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                          | 542|         65|  542|       1625|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |                           Name                          | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                |   2|   0|    2|          0|
+    |ap_reg_ppiten_pp0_it1                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it10                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it11                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it12                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it13                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it14                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it15                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it16                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it17                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it18                                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it2                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it3                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it4                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it5                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it6                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it7                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it8                                    |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it9                                    |   1|   0|    1|          0|
+    |coordinates1_0                                           |  32|   0|   32|          0|
+    |coordinates1_1                                           |  32|   0|   32|          0|
+    |coordinates1_2                                           |  32|   0|   32|          0|
+    |coordinates2_0                                           |  32|   0|   32|          0|
+    |coordinates2_1                                           |  32|   0|   32|          0|
+    |coordinates2_2                                           |  32|   0|   32|          0|
+    |grp_master_ip_mainFunction_fu_143_ap_start_ap_start_reg  |   1|   0|    1|          0|
+    |isNeg_reg_629                                            |   1|   0|    1|          0|
+    |newret7_reg_541                                          |  32|   0|   32|          0|
+    |newret8_reg_546                                          |  32|   0|   32|          0|
+    |newret9_reg_551                                          |  32|   0|   32|          0|
+    |p_Result_1_reg_624                                       |  52|   0|   53|          1|
+    |p_Result_s_reg_619                                       |   1|   0|    1|          0|
+    |sh_assign_1_cast_reg_634                                 |  32|   0|   32|          0|
+    |signal1_ck_a_V                                           |   8|   0|    8|          0|
+    |signal1_ck_b_V                                           |   8|   0|    8|          0|
+    |signal1_count_V                                          |  16|   0|   16|          0|
+    |signal1_current_out_byte_V                               |   8|   0|    8|          0|
+    |signal1_gnss_state_V                                     |   6|   0|    6|          0|
+    |signal1_next_out_byte_V                                  |   8|   0|    8|          0|
+    |signal1_previous_input_V                                 |   1|   0|    1|          0|
+    |signal1_tempCoordinates_0                                |  32|   0|   32|          0|
+    |signal1_tempCoordinates_1                                |  32|   0|   32|          0|
+    |signal1_tempCoordinates_2                                |  32|   0|   32|          0|
+    |signal1_uart_state_V                                     |   4|   0|    4|          0|
+    |signal2_ck_a_V                                           |   8|   0|    8|          0|
+    |signal2_ck_b_V                                           |   8|   0|    8|          0|
+    |signal2_count_V                                          |  16|   0|   16|          0|
+    |signal2_current_out_byte_V                               |   8|   0|    8|          0|
+    |signal2_gnss_state_V                                     |   6|   0|    6|          0|
+    |signal2_next_out_byte_V                                  |   8|   0|    8|          0|
+    |signal2_previous_input_V                                 |   1|   0|    1|          0|
+    |signal2_tempCoordinates_0                                |  32|   0|   32|          0|
+    |signal2_tempCoordinates_1                                |  32|   0|   32|          0|
+    |signal2_tempCoordinates_2                                |  32|   0|   32|          0|
+    |signal2_uart_state_V                                     |   4|   0|    4|          0|
+    |tmp_100_i_reg_566                                        |  32|   0|   32|          0|
+    |tmp_101_i_reg_583                                        |  64|   0|   64|          0|
+    |tmp_102_i_reg_599                                        |  64|   0|   64|          0|
+    |tmp_103_i_reg_609                                        |  64|   0|   64|          0|
+    |tmp_95_i_reg_589                                         |  64|   0|   64|          0|
+    |tmp_96_i_reg_561                                         |  32|   0|   32|          0|
+    |tmp_97_i_reg_577                                         |  64|   0|   64|          0|
+    |tmp_98_i_reg_594                                         |  64|   0|   64|          0|
+    |tmp_99_i_reg_604                                         |  64|   0|   64|          0|
+    |tmp_i_12_reg_571                                         |  64|   0|   64|          0|
+    |tmp_i_reg_556                                            |  32|   0|   32|          0|
+    |tmp_reg_639                                              |   1|   0|    1|          0|
+    |x_assign_reg_614                                         |  64|   0|   64|          0|
+    |tmp_102_i_reg_599                                        |   0|  64|   64|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                    |1378|  64| 1443|          1|
+    +---------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+--------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|   Protocol   | Source Object|    C Type    |
++------------------------+-----+-----+--------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_AWREADY  | out |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_AWADDR   |  in |    5|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_WVALID   |  in |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_WREADY   | out |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_WDATA    |  in |   32|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_WSTRB    |  in |    4|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_ARVALID  |  in |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_ARREADY  | out |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_ARADDR   |  in |    5|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_RVALID   | out |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_RREADY   |  in |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_RDATA    | out |   32|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_RRESP    | out |    2|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_BVALID   | out |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_BREADY   |  in |    1|     s_axi    |   AXILiteS   |    pointer   |
+|s_axi_AXILiteS_BRESP    | out |    2|     s_axi    |   AXILiteS   |    pointer   |
+|ap_clk                  |  in |    1| ap_ctrl_none |   master_ip  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_none |   master_ip  | return value |
+|uart1_V                 |  in |    1|    ap_none   |    uart1_V   |    pointer   |
+|uart2_V                 |  in |    1|    ap_none   |    uart2_V   |    pointer   |
+|alert_V                 | out |    1|    ap_none   |    alert_V   |    pointer   |
++------------------------+-----+-----+--------------+--------------+--------------+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="master_ip" xd:componentRef="master_ip" xd:initiationInterval="1" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="*(in_uart1)" xd:originalName="in_uart1" xd:direction="in" xd:interfaceRef="in_uart1_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(in_uart2)" xd:originalName="in_uart2" xd:direction="in" xd:interfaceRef="in_uart2_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(out_alert)" xd:originalName="out_alert" xd:direction="out" xd:interfaceRef="out_alert_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(out_getting_uart_data1)" xd:originalName="out_getting_uart_data1" xd:direction="out" xd:interfaceRef="out_getting_uart_data1_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(out_getting_gnss_data1)" xd:originalName="out_getting_gnss_data1" xd:direction="out" xd:interfaceRef="out_getting_gnss_data1_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(out_getting_uart_data2)" xd:originalName="out_getting_uart_data2" xd:direction="out" xd:interfaceRef="out_getting_uart_data2_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(out_getting_gnss_data2)" xd:originalName="out_getting_gnss_data2" xd:direction="out" xd:interfaceRef="out_getting_gnss_data2_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="56" xd:worst-case="56" xd:average-case="56"/>
+  <xd:resourceEstimates xd:LUT="9587" xd:FF="5947" xd:BRAM="0" xd:DSP="39"/>
+</xd:acceleratorMap>

@@ -1,0 +1,189 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'master_ip'" level="0">
+<item name = "Date">Wed May 11 13:21:25 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">master_ip</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">20.00, 16.41, 2.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">35, 38, 36, 39, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_master_ip_mainFunction_fu_139">master_ip_mainFunction, 1, 4, 1, 4, none</column>
+<column name="grp_master_ip_mainFunction_fu_166">master_ip_mainFunction, 1, 4, 1, 4, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 824</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 25, 3490, 9463</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 226</column>
+<column name="Register">-, -, 1019, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 11, 4, 19</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="master_ip_AXILiteS_s_axi_U">master_ip_AXILiteS_s_axi, 0, 0, 44, 56</column>
+<column name="master_ip_dadd_64ns_64ns_64_4_full_dsp_U31">master_ip_dadd_64ns_64ns_64_4_full_dsp, 0, 3, 430, 1130</column>
+<column name="master_ip_dmul_64ns_64ns_64_4_max_dsp_U32">master_ip_dmul_64ns_64ns_64_4_max_dsp, 0, 11, 275, 558</column>
+<column name="master_ip_dmul_64ns_64ns_64_4_max_dsp_U33">master_ip_dmul_64ns_64ns_64_4_max_dsp, 0, 11, 275, 558</column>
+<column name="master_ip_dsqrt_64ns_64ns_64_17_U36">master_ip_dsqrt_64ns_64ns_64_17, 0, 0, 1114, 2095</column>
+<column name="grp_master_ip_mainFunction_fu_139">master_ip_mainFunction, 0, 0, 487, 1955</column>
+<column name="grp_master_ip_mainFunction_fu_166">master_ip_mainFunction, 0, 0, 487, 1955</column>
+<column name="master_ip_sitodp_32ns_64_3_U34">master_ip_sitodp_32ns_64_3, 0, 0, 189, 578</column>
+<column name="master_ip_sitodp_32ns_64_3_U35">master_ip_sitodp_32ns_64_3, 0, 0, 189, 578</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="sh_assign_fu_503_p2">+, 0, 0, 12, 11, 12</column>
+<column name="p_Val2_7_i_i_i_fu_589_p2">-, 0, 0, 32, 1, 32</column>
+<column name="tmp_100_i_fu_456_p2">-, 0, 0, 32, 32, 32</column>
+<column name="tmp_96_i_fu_450_p2">-, 0, 0, 32, 32, 32</column>
+<column name="tmp_i_fu_444_p2">-, 0, 0, 32, 32, 32</column>
+<column name="tmp_i_i_i_13_fu_517_p2">-, 0, 0, 11, 10, 11</column>
+<column name="p_Val2_3_fu_581_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="p_Val2_5_fu_595_p3">Select, 0, 0, 32, 1, 32</column>
+<column name="sh_assign_1_fu_527_p3">Select, 0, 0, 12, 1, 12</column>
+<column name="alert_V">icmp, 0, 0, 11, 32, 10</column>
+<column name="tmp_89_i_i_i_fu_547_p2">lshr, 0, 0, 157, 53, 53</column>
+<column name="tmp_91_i_i_i_fu_553_p2">shl, 0, 0, 429, 136, 136</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">66, 36, 1, 36</column>
+<column name="grp_fu_193_p0">64, 3, 64, 192</column>
+<column name="grp_fu_193_p1">64, 3, 64, 192</column>
+<column name="grp_fu_205_p0">32, 3, 32, 96</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">35, 0, 35, 0</column>
+<column name="coordinates1_0">32, 0, 32, 0</column>
+<column name="coordinates1_1">32, 0, 32, 0</column>
+<column name="coordinates1_2">32, 0, 32, 0</column>
+<column name="coordinates2_0">32, 0, 32, 0</column>
+<column name="coordinates2_1">32, 0, 32, 0</column>
+<column name="coordinates2_2">32, 0, 32, 0</column>
+<column name="grp_master_ip_mainFunction_fu_139_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_master_ip_mainFunction_fu_166_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="reg_216">64, 0, 64, 0</column>
+<column name="reg_222">64, 0, 64, 0</column>
+<column name="reg_228">64, 0, 64, 0</column>
+<column name="signal1_ck_a_V">8, 0, 8, 0</column>
+<column name="signal1_ck_b_V">8, 0, 8, 0</column>
+<column name="signal1_count_V">16, 0, 16, 0</column>
+<column name="signal1_current_out_byte_V">8, 0, 8, 0</column>
+<column name="signal1_gnss_state_V">6, 0, 6, 0</column>
+<column name="signal1_next_out_byte_V">8, 0, 8, 0</column>
+<column name="signal1_previous_input_V">1, 0, 1, 0</column>
+<column name="signal1_tempCoordinates_0">32, 0, 32, 0</column>
+<column name="signal1_tempCoordinates_1">32, 0, 32, 0</column>
+<column name="signal1_tempCoordinates_2">32, 0, 32, 0</column>
+<column name="signal1_uart_state_V">4, 0, 4, 0</column>
+<column name="signal2_ck_a_V">8, 0, 8, 0</column>
+<column name="signal2_ck_b_V">8, 0, 8, 0</column>
+<column name="signal2_count_V">16, 0, 16, 0</column>
+<column name="signal2_current_out_byte_V">8, 0, 8, 0</column>
+<column name="signal2_gnss_state_V">6, 0, 6, 0</column>
+<column name="signal2_next_out_byte_V">8, 0, 8, 0</column>
+<column name="signal2_previous_input_V">1, 0, 1, 0</column>
+<column name="signal2_tempCoordinates_0">32, 0, 32, 0</column>
+<column name="signal2_tempCoordinates_1">32, 0, 32, 0</column>
+<column name="signal2_tempCoordinates_2">32, 0, 32, 0</column>
+<column name="signal2_uart_state_V">4, 0, 4, 0</column>
+<column name="tmp_100_i_reg_700">32, 0, 32, 0</column>
+<column name="tmp_96_i_reg_695">32, 0, 32, 0</column>
+<column name="tmp_97_i_reg_705">64, 0, 64, 0</column>
+<column name="tmp_98_i_reg_711">64, 0, 64, 0</column>
+<column name="tmp_i_reg_690">32, 0, 32, 0</column>
+<column name="x_assign_reg_716">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 5, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 5, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, master_ip, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, master_ip, return value</column>
+<column name="uart1_V">in, 1, ap_none, uart1_V, pointer</column>
+<column name="uart2_V">in, 1, ap_none, uart2_V, pointer</column>
+<column name="alert_V">out, 1, ap_none, alert_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

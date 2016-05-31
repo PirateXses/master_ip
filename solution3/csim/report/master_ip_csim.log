@@ -1,0 +1,17 @@
+   Compiling ../../../master_ip_test.cpp in release mode
+   Compiling ../../../master_ip_test_1.cpp in release mode
+   Compiling ../../../master_ip_test_2.cpp in release mode
+   Compiling ../../../master_ip_test_3.cpp in release mode
+   Compiling ../../../cppm_to_horizontal_movement.cpp in release mode
+   Compiling ../../../master_ip.cpp in release mode
+   Compiling ../../../master_ip_1.cpp in release mode
+   Compiling ../../../master_ip_2.cpp in release mode
+   Compiling ../../../master_ip_3.cpp in release mode
+   Compiling ../../../uart_to_coordinates.cpp in release mode
+   Generating csim.exe
+H:1
+11New velocity: 50529027,50529027,50529027
+New velocity: 0,0,0
+H:0
+11
+@I [SIM-1] CSim done with 0 errors.

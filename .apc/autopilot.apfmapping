@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cppm_to_horizontal_movement.cpp" path="C:\Users\mxfr\Vivado\master_ip\cppm_to_horizontal_movement.cpp"/>
+    <originFiles name="cppm_to_horizontal_movement.h" path="C:\Users\mxfr\Vivado\master_ip\cppm_to_horizontal_movement.h"/>
+    <originFiles name="master_ip.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip.cpp"/>
+    <originFiles name="master_ip.h" path="C:\Users\mxfr\Vivado\master_ip\master_ip.h"/>
+    <originFiles name="master_ip_1.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_1.cpp"/>
+    <originFiles name="master_ip_2.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_2.cpp"/>
+    <originFiles name="master_ip_3.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_3.cpp"/>
+    <originFiles name="uart_to_coordinates.cpp" path="C:\Users\mxfr\Vivado\master_ip\uart_to_coordinates.cpp"/>
+    <originFiles name="uart_to_coordinates.h" path="C:\Users\mxfr\Vivado\master_ip\uart_to_coordinates.h"/>
+  </source>
+  <testbench>
+    <originFiles name="master_ip_test.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_test.cpp"/>
+    <originFiles name="master_ip_test_1.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_test_1.cpp"/>
+    <originFiles name="master_ip_test_2.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_test_2.cpp"/>
+    <originFiles name="master_ip_test_3.cpp" path="C:\Users\mxfr\Vivado\master_ip\master_ip_test_3.cpp"/>
+    <originFiles name="testData_CPPMMovementFalse_DataValidTrue.txt" path="C:\Users\mxfr\Vivado\master_ip\testData_CPPMMovementFalse_DataValidTrue.txt"/>
+    <originFiles name="testData_CPPMMovementTrue_DataValidTrue.txt" path="C:\Users\mxfr\Vivado\master_ip\testData_CPPMMovementTrue_DataValidTrue.txt"/>
+    <originFiles name="testData_GNSSMovementFalse_DataValidTrue.txt" path="C:\Users\mxfr\Vivado\master_ip\testData_GNSSMovementFalse_DataValidTrue.txt"/>
+    <originFiles name="testData_GNSSMovementTrue_DataValidFalse.txt" path="C:\Users\mxfr\Vivado\master_ip\testData_GNSSMovementTrue_DataValidFalse.txt"/>
+    <originFiles name="testData_GNSSMovementTrue_DataValidTrue.txt" path="C:\Users\mxfr\Vivado\master_ip\testData_GNSSMovementTrue_DataValidTrue.txt"/>
+    <originFiles name="testInputData.txt" path="C:\Users\mxfr\Vivado\master_ip\testInputData.txt"/>
+    <originFiles name="testResultData.txt" path="C:\Users\mxfr\Vivado\master_ip\testResultData.txt"/>
+    <originFiles name="testResultData1.txt" path="C:\Users\mxfr\Vivado\master_ip\testResultData1.txt"/>
+    <originFiles name="testResultData2.txt" path="C:\Users\mxfr\Vivado\master_ip\testResultData2.txt"/>
+    <originFiles name="testResultData3.txt" path="C:\Users\mxfr\Vivado\master_ip\testResultData3.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
